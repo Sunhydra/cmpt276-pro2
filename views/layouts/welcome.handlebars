@@ -1,0 +1,1243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<title>ASN2</title>
+<style type="text/css">
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,600,700);
+
+.ReadMsgBody { width: 100%; background-color: #ffffff; }
+.ExternalClass { width: 100%; background-color: #ffffff; }
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; }
+html { width: 100%; }
+body { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; margin: 0; padding: 0; }
+table { border-spacing: 0; border-collapse: collapse; }
+table td { border-collapse: collapse; }
+.yshortcuts a { border-bottom: none !important; }
+img { display: block !important; }
+img:hover { opacity: 0.84 !important; }
+a { text-decoration: none; color: #44cc84; }
+
+/* Media Queries */
+
+@media only screen and (max-width: 640px) {
+	body { width: auto !important; }
+	table[class="table600"] { width: 450px !important; }
+	table[class="table-container"] { width: 90% !important; }
+	table[class="container2-2"] { width: 47% !important; text-align: left !important; }
+	table[class="full-width"] { width: 100% !important; text-align: center !important; }
+	img[class="img-full"] { width: 100% !important; height: auto !important; }
+}
+
+@media only screen and (max-width: 479px) {
+	body { width: auto !important; }
+	table[class="table600"] { width: 290px !important; }
+	table[class="table-container"] { width: 82% !important; }
+	table[class="container2-2"] { width: 100% !important; text-align: left !important; }
+	table[class="full-width"] { width: 100% !important; text-align: center !important; }
+	img[class="img-full"] { width: 100% !important; }
+}
+
+</style>
+
+</head>
+
+<body marginwidth="0" marginheight="0" style="margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0; width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;" offset="0" topmargin="0" leftmargin="0">
+
+<!-- MAIN A -->
+<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<!-- Background -->
+		<td align="center" bgcolor="#333333" background="https://{{host}}/email/img/header.jpg" style="background-size: cover; background-position: center;">
+			<table class="table600" width="600" border="0" cellpadding="0" cellspacing="0">
+
+				<tr>
+					<td height="200" style="font-size: 1px; line-height: 200px;">&nbsp;</td>
+				</tr>
+
+				<tr>
+					<td align="center" style="font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 700; color: #ffffff; line-height: 24px; letter-spacing: 2px;">
+						温哥华华人优惠平台
+					</td>
+				</tr>
+
+				<tr>
+					<td height="25" style="font-size: 1px; line-height: 25px;">&nbsp;</td>
+				</tr>
+
+				<tr>
+					<td align="center" style="font-family: 'Poppins', sans-serif; font-size: 42px; font-weight: 700; color: #ffffff; line-height: 48px; letter-spacing: 4px;">
+						舌尖联盟欢迎您
+					</td>
+				</tr>
+
+				<!-- Underline -->
+				<tr>
+					<td align="center">
+						<table width="75" border="0" cellpadding="0" cellspacing="0">
+						<!-- Edit Underline -->
+							<tr>
+								<td height="25" style="border-bottom: 2px solid #ffffff;"></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<!-- End Underline -->
+
+				<tr>
+					<td height="30" style="font-size: 1px; line-height: 30px;">&nbsp;</td>
+				</tr>
+
+				<!-- Button -->
+				<tr>
+					<td align="center">
+						<table align="center" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="center" height="44" style="font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 600; color: #ffffff; line-height: 24px; letter-spacing: 1px; padding-left: 34px; padding-right: 34px; border: 2px solid #ffffff;">
+									<a href="http://newtongue.ca" style="text-decoration: none; color: #ffffff;">
+										舌尖网站
+									</a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<!-- End Button -->
+
+				<tr>
+					<td height="200" style="font-size: 1px; line-height: 200px;">&nbsp;</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<!-- END MAIN A -->
+
+<!-- HEADLINE AND CONTENT -->
+<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td align="center" bgcolor="#ffffff">
+			<table class="table600" width="600" border="0" cellpadding="0" cellspacing="0">
+
+				<tr>
+					<td height="50" style="font-size: 1px; line-height: 50px;">&nbsp;</td>
+				</tr>
+
+				<tr>
+					<td align="center" style="font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700; color: #333333; letter-spacing: 2px; line-height: 32px;">
+						你已经完成第一步了...
+					</td>
+				</tr>
+
+				<tr>
+					<td height="10" style="font-size: 1px; line-height: 10px;">&nbsp;</td>
+				</tr>
+
+				<tr>
+					<td align="center" style="font-family: 'Poppins', sans-serif; font-size: 28px; font-weight: 700; color: #333333; letter-spacing: 2px; line-height: 32px;">
+						感谢注册成为舌尖的一员！
+					</td>
+				</tr>
+
+				<!-- Underline -->
+				<tr>
+					<td align="center">
+						<table width="75" border="0" cellpadding="0" cellspacing="0">
+						<!-- Edit Underline -->
+							<tr>
+								<td height="25" style="border-bottom: 2px solid #44cc84;"></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<!-- End Underline -->
+
+				<tr>
+					<td height="25" style="font-size: 1px; line-height: 25px;">&nbsp;</td>
+				</tr>
+
+				<tr>
+					<td align="center" style="font-family: 'Open Sans', sans-serif; font-size: 13px; font-weight: 400; color: #8f96a1; line-height: 24px;">
+						舌尖联盟可以帮您开启意想不到的美食之旅，让您挖掘不可思议的商家，加上诱人的优惠，不可错过！多样种类的商家让您选择，品嚐，吃得轻松，钱包也没负担！
+					</td>
+				</tr>
+
+
+
+			</table>
+		</td>
+	</tr>
+</table>
+<!-- END HEADLINE AND CONTENT -->
+
+<!-- ARTICLE 2 COLUMN -->
+<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<!-- Background -->
+		<td align="center" bgcolor="#ffffff">
+			<table class="table600" width="600" border="0" cellpadding="0" cellspacing="0">
+
+				<tr>
+					<td height="50" style="font-size: 1px; line-height: 50px;">&nbsp;</td>
+				</tr>
+
+				<tr>
+					<td>
+
+						<table class="container2-2" width="297" align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+
+							<tr>
+								<td>
+
+									<table class="full-width" width="145" align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+
+										<tr>
+											<td align="center">
+												<img class="img-full" src="https://{{host}}/email/img/strikelogo.png" alt="img" width="145" height="145">
+											</td>
+										</tr>
+
+									</table>
+
+									<!-- SPACE -->
+										<table class="full-width" width="1" align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" >
+											<tr>
+												<td width="1" height="30" style="font-size: 1px; line-height: 30px;"></td>
+											</tr>
+										</table>
+									<!-- END SPACE -->
+
+									<table class="full-width" width="145" align="right" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+
+										<tr>
+											<td align="center">
+												<img class="img-full" src="https://{{host}}/email/img/chatimelogo.jpg" alt="img" width="145" height="145">
+											</td>
+										</tr>
+
+									</table>
+
+								</td>
+							</tr>
+
+						</table>
+
+						<!-- SPACE -->
+							<table width="1" align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" >
+								<tr>
+									<td width="1" height="30" style="font-size: 1px; line-height: 30px;"></td>
+								</tr>
+							</table>
+						<!-- END SPACE -->
+
+						<table class="container2-2" width="297" align="right" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+
+							<tr>
+								<td>
+
+									<table class="full-width" width="145" align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+
+										<tr>
+											<td align="center">
+												<img class="img-full" src="https://{{host}}/email/img/mlgblogo.jpg" alt="img" width="145" height="145">
+											</td>
+										</tr>
+
+									</table>
+
+									<!-- SPACE -->
+										<table class="full-width" width="1" align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" >
+											<tr>
+												<td width="1" height="30" style="font-size: 1px; line-height: 30px;"></td>
+											</tr>
+										</table>
+									<!-- END SPACE -->
+
+									<table class="full-width" width="145" align="right" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+
+										<tr>
+											<td align="center">
+												<img class="img-full" src="https://{{host}}/email/img/morallogo.jpg" alt="img" width="145" height="145">
+											</td>
+										</tr>
+
+									</table>
+
+								</td>
+							</tr>
+
+						</table>
+
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+
+						<table class="container2-2" width="297" align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+
+							<tr>
+								<td>
+
+									<table class="full-width" width="145" align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+
+										<tr>
+											<td align="center">
+												<img class="img-full" src="https://{{host}}/email/img/mystlogo.jpg" alt="img" width="145" height="145">
+											</td>
+										</tr>
+
+									</table>
+
+
+
+									<table class="full-width" width="145" align="right" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+
+										<tr>
+											<td align="center">
+												<img class="img-full" src="https://{{host}}/email/img/estealogo.jpg" alt="img" width="145" height="145">
+											</td>
+										</tr>
+
+									</table>
+
+								</td>
+							</tr>
+
+						</table>
+
+
+
+						<table class="container2-2" width="297" align="right" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+
+							<tr>
+								<td>
+
+									<table class="full-width" width="145" align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+
+										<tr>
+											<td align="center">
+												<img class="img-full" src="https://{{host}}/email/img/majilogo.jpg" alt="img" width="145" height="145">
+											</td>
+										</tr>
+
+									</table>
+
+
+
+									<table class="full-width" width="145" align="right" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+
+										<tr>
+											<td align="center">
+												<img class="img-full" src="https://{{host}}/email/img/cashboxlogo.jpg" alt="img" width="145" height="145">
+											</td>
+										</tr>
+
+									</table>
+
+								</td>
+							</tr>
+
+						</table>
+
+					</td>
+				</tr>
+
+				<tr>
+					<td height="50" style="font-size: 1px; line-height: 50px;">&nbsp;</td>
+				</tr>
+				<tr>
+
+					<td align="center" style="font-family: 'Open Sans', sans-serif; font-size: 13px; font-weight: 400; color: #8f96a1; line-height: 24px;">
+					<a href="http://newtongue.ca/storelist">查看更多商家...</a>
+					</td>
+				</tr>
+
+				<tr>
+					<td height="50" style="font-size: 1px; line-height: 50px;">&nbsp;</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+<!-- END ARTICLE 2 COLUMN -->
+<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+<tr>
+	<!-- Background -->
+	<td align="center" bgcolor="#333333" background="https://{{host}}/email/img/separator.jpg" style="background-size: cover; background-position: center; position: relative; z-index: 4;">
+		<div style="background:rgba(255, 255, 255, 0.8); position: absolute; top:-10%; left: 15%; width:70%; height: 120%; z-index: -1;  -webkit-filter: blur(10px);
+		-moz-filter: blur(10px);
+		-o-filter: blur(10px);
+		-ms-filter: blur(10px);
+		filter: blur(10px);
+		}"> &nbsp; </div>
+		<table class="table600" width="600" border="0" cellpadding="0" cellspacing="0" >
+
+
+
+			<tr>
+				<td height="50" style="font-size: 1px; line-height: 50px;">&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td align="center" style="font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700; color: #333333; letter-spacing: 2px; line-height: 32px;">
+					准备系好安全带...
+				</td>
+			</tr>
+
+			<tr>
+				<td height="10" style="font-size: 1px; line-height: 10px;">&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td align="center" style="font-family: 'Poppins', sans-serif; font-size: 28px; font-weight: 700; color: #333333; letter-spacing: 2px; line-height: 32px;">
+					让舌尖带您上惊叹的食之旅程！
+				</td>
+			</tr>
+
+			<!-- Underline -->
+			<tr>
+				<td align="center">
+					<table width="75" border="0" cellpadding="0" cellspacing="0">
+					<!-- Edit Underline -->
+						<tr>
+							<td height="25" style="border-bottom: 2px solid #333333;"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<!-- End Underline -->
+
+			<tr>
+				<td height="25" style="font-size: 1px; line-height: 25px;">&nbsp;</td>
+			</tr>
+
+			<tr>
+
+				<td align="center" style="font-family: 'Open Sans', sans-serif; font-size: 13px; font-weight: 400; color: #333333; line-height: 24px; padding: 0 50px;">
+
+					我们的店家一直在增加，更新，我们将带给您品质保证的商家。我们只推荐我们自己喜欢，试过的，所以跟我们一起探索温哥华，让生活更加美好，更加了解温哥华！
+
+				</td>
+			</tr>
+
+			<tr>
+				<td height="50" style="font-size: 1px; line-height: 50px;">&nbsp;</td>
+			</tr>
+
+		</table>
+	</td>
+</tr>
+</table>
+
+<!-- PRICE 2 COLUMN -->
+<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<!-- Background -->
+		<td align="center" bgcolor="#fbfbfc" style="border: 1px solid #f2f2f2;">
+			<table class="table600" width="600" border="0" cellpadding="0" cellspacing="0">
+
+				<tr>
+					<td height="50" style="font-size: 1px; line-height: 50px;">&nbsp;</td>
+				</tr>
+
+				<tr>
+					<td align="center" style="font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700; color: #333333; letter-spacing: 2px; line-height: 32px;">
+						下一步....
+					</td>
+				</tr>
+
+				<tr>
+					<td height="10" style="font-size: 1px; line-height: 10px;">&nbsp;</td>
+				</tr>
+
+				<tr>
+					<td align="center" style="font-family: 'Poppins', sans-serif; font-size: 28px; font-weight: 700; color: #333333; letter-spacing: 2px; line-height: 32px;">
+						开始使用舌尖卡
+					</td>
+				</tr>
+
+				<!-- Underline -->
+				<tr>
+					<td align="center">
+						<table width="75" border="0" cellpadding="0" cellspacing="0">
+						<!-- Edit Underline -->
+							<tr>
+								<td height="25" style="border-bottom: 2px solid #44cc84;"></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<!-- End Underline -->
+
+				<tr>
+					<td height="25" style="font-size: 1px; line-height: 25px;">&nbsp;</td>
+				</tr>
+
+				<tr>
+					<td align="center" style="font-family: 'Open Sans', sans-serif; font-size: 13px; font-weight: 400; color: #8f96a1; line-height: 24px;">
+						如果您是第一次加入舌尖，那您只差一步就可以享受商家九折的优惠了！只要购买您想要的方案，即可开始马上用舌尖卡。
+					</td>
+				</tr>
+
+				<tr>
+					<td height="25" style="font-size: 1px; line-height: 25px;">&nbsp;</td>
+				</tr>
+
+				<tr>
+					<td>
+
+						<table class="full-width" width="287" align="left" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="border: 1px solid #f2f2f2; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+
+							<tr>
+								<td height="20" style="font-size: 1px; line-height: 20px;">&nbsp;</td>
+							</tr>
+
+							<tr>
+								<td align="center" style="font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: 700; color: #333333; letter-spacing: 1px; line-height: 32px;">
+									食客
+								</td>
+							</tr>
+
+							<tr>
+								<td height="20" style="font-size: 1px; line-height: 20px;">&nbsp;</td>
+							</tr>
+
+							<tr>
+								<td bgcolor="#44cc84" align="center" style="font-family: 'Poppins', sans-serif; font-size: 36px; font-weight: 700; color: #ffffff; line-height: 60px;">
+									$4/月
+								</td>
+							</tr>
+
+							<tr>
+								<td height="30" style="font-size: 1px; line-height: 30px;">&nbsp;</td>
+							</tr>
+
+							<tr>
+								<td>
+									<table class="table-container" width="200" align="center" border="0" cellpadding="0" cellspacing="0">
+										<tr>
+											<td align="center">
+
+												<table width="18" align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+													<tr>
+														<td align="left">
+															<img src="https://{{host}}/email/img/check-list.png" alt="icon" width="18" height="18">
+														</td>
+													</tr>
+												</table>
+
+												<!-- SPACE -->
+													<table width="1" align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" >
+														<tr>
+															<td width="1" height="5" style="font-size: 5px; line-height: 5px;"></td>
+														</tr>
+													</table>
+												<!-- END SPACE -->
+
+												<table class="table-container" width="170" align="right" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+
+													<tr>
+														<td align="left" style="font-family: 'Open Sans', sans-serif; font-size: 13px; font-weight: 400; color: #8f96a1; line-height: 18px;">
+															省钱方案
+														</td>
+													</tr>
+
+												</table>
+
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+
+							<tr>
+								<td height="15" style="font-size: 1px; line-height: 15px;">&nbsp;</td>
+							</tr>
+
+							<tr>
+								<td>
+									<table class="table-container" width="200" align="center" border="0" cellpadding="0" cellspacing="0">
+										<tr>
+											<td align="center">
+
+												<table width="18" align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+													<tr>
+														<td align="left">
+															<img src="https://{{host}}/email/img/check-list.png" alt="icon" width="18" height="18">
+														</td>
+													</tr>
+												</table>
+
+												<!-- SPACE -->
+													<table width="1" align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" >
+														<tr>
+															<td width="1" height="5" style="font-size: 5px; line-height: 5px;"></td>
+														</tr>
+													</table>
+												<!-- END SPACE -->
+
+												<table class="table-container" width="170" align="right" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+
+													<tr>
+														<td align="left" style="font-family: 'Open Sans', sans-serif; font-size: 13px; font-weight: 400; color: #8f96a1; line-height: 18px;">
+															六个月期限
+														</td>
+													</tr>
+
+												</table>
+
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+
+							<tr>
+								<td height="15" style="font-size: 1px; line-height: 15px;">&nbsp;</td>
+							</tr>
+
+							<tr>
+								<td>
+									<table class="table-container" width="200" align="center" border="0" cellpadding="0" cellspacing="0">
+										<tr>
+											<td align="center">
+
+												<table width="18" align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+													<tr>
+														<td align="left">
+															<img src="https://{{host}}/email/img/check-list.png" alt="icon" width="18" height="18">
+														</td>
+													</tr>
+												</table>
+
+												<!-- SPACE -->
+													<table width="1" align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" >
+														<tr>
+															<td width="1" height="5" style="font-size: 5px; line-height: 5px;"></td>
+														</tr>
+													</table>
+												<!-- END SPACE -->
+
+												<table class="table-container" width="170" align="right" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+
+													<tr>
+														<td align="left" style="font-family: 'Open Sans', sans-serif; font-size: 13px; font-weight: 400; color: #8f96a1; line-height: 18px;">
+															线上与电话客服
+														</td>
+													</tr>
+
+												</table>
+
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+
+							<tr>
+								<td height="30" style="font-size: 1px; line-height: 30px;">&nbsp;</td>
+							</tr>
+
+							<tr>
+								<td align="center">
+									<table width="200" align="center" border="0" cellpadding="0" cellspacing="0" bgcolor="#4472cc" style="border-radius: 5px;">
+
+										<tr>
+											<td height="10" style="font-size: 1px; line-height: 10px;">&nbsp;</td>
+										</tr>
+
+										<tr>
+											<td align="center" style="font-family: 'Open Sans', sans-serif; font-size: 13px; font-weight: 600; color: #ffffff; line-height: 24px;">
+												<a href="http://newtongue.ca/checkout/6" style="color: #ffffff; text-decoration: none;">购买</a>
+											</td>
+										</tr>
+
+										<tr>
+											<td height="10" style="font-size: 1px; line-height: 10px;">&nbsp;</td>
+										</tr>
+
+									</table>
+								</td>
+							</tr>
+
+							<tr>
+								<td height="20" style="font-size: 1px; line-height: 20px;">&nbsp;</td>
+							</tr>
+
+						</table>
+
+						<!-- SPACE -->
+							<table class="full-width" width="1" align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" >
+								<tr>
+									<td width="1" height="40" style="font-size: 40px; line-height: 40px;"></td>
+								</tr>
+							</table>
+						<!-- END SPACE -->
+
+						<table class="full-width" width="287" align="right" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="border: 1px solid #f2f2f2; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+
+							<tr>
+								<td height="20" style="font-size: 1px; line-height: 20px;">&nbsp;</td>
+							</tr>
+
+							<tr>
+								<td align="center" style="font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: 700; color: #333333; letter-spacing: 1px; line-height: 32px;">
+									老饕
+								</td>
+							</tr>
+
+							<tr>
+								<td height="20" style="font-size: 1px; line-height: 20px;">&nbsp;</td>
+							</tr>
+
+							<tr>
+								<td bgcolor="#44cc84" align="center" style="font-family: 'Poppins', sans-serif; font-size: 36px; font-weight: 700; color: #ffffff; line-height: 60px;">
+									$3/月
+								</td>
+							</tr>
+
+							<tr>
+								<td height="30" style="font-size: 1px; line-height: 30px;">&nbsp;</td>
+							</tr>
+
+							<tr>
+								<td>
+									<table class="table-container" width="200" align="center" border="0" cellpadding="0" cellspacing="0">
+										<tr>
+											<td align="center">
+
+												<table width="18" align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+													<tr>
+														<td align="left">
+															<img src="https://{{host}}/email/img/check-list.png" alt="icon" width="18" height="18">
+														</td>
+													</tr>
+												</table>
+
+												<!-- SPACE -->
+													<table width="1" align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" >
+														<tr>
+															<td width="1" height="5" style="font-size: 5px; line-height: 5px;"></td>
+														</tr>
+													</table>
+												<!-- END SPACE -->
+
+												<table class="table-container" width="170" align="right" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+
+													<tr>
+														<td align="left" style="font-family: 'Open Sans', sans-serif; font-size: 13px; font-weight: 400; color: #8f96a1; line-height: 18px;">
+															超值方案
+														</td>
+													</tr>
+
+												</table>
+
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+
+							<tr>
+								<td height="15" style="font-size: 1px; line-height: 15px;">&nbsp;</td>
+							</tr>
+
+							<tr>
+								<td>
+									<table class="table-container" width="200" align="center" border="0" cellpadding="0" cellspacing="0">
+										<tr>
+											<td align="center">
+
+												<table width="18" align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+													<tr>
+														<td align="left">
+															<img src="https://{{host}}/email/img/check-list.png" alt="icon" width="18" height="18">
+														</td>
+													</tr>
+												</table>
+
+												<!-- SPACE -->
+													<table width="1" align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" >
+														<tr>
+															<td width="1" height="5" style="font-size: 5px; line-height: 5px;"></td>
+														</tr>
+													</table>
+												<!-- END SPACE -->
+
+												<table class="table-container" width="170" align="right" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+
+													<tr>
+														<td align="left" style="font-family: 'Open Sans', sans-serif; font-size: 13px; font-weight: 400; color: #8f96a1; line-height: 18px;">
+															<strong>一年</strong>期限
+														</td>
+													</tr>
+
+												</table>
+
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td height="15" style="font-size: 1px; line-height: 15px;">&nbsp;</td>
+							</tr>
+							<tr>
+								<td>
+									<table class="table-container" width="200" align="center" border="0" cellpadding="0" cellspacing="0">
+										<tr>
+											<td align="center">
+
+												<table width="18" align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+													<tr>
+														<td align="left">
+															<img src="https://{{host}}/email/img/check-list.png" alt="icon" width="18" height="18">
+														</td>
+													</tr>
+												</table>
+
+												<!-- SPACE -->
+													<table width="1" align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" >
+														<tr>
+															<td width="1" height="5" style="font-size: 5px; line-height: 5px;"></td>
+														</tr>
+													</table>
+												<!-- END SPACE -->
+
+												<table class="table-container" width="170" align="right" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+
+													<tr>
+														<td align="left" style="font-family: 'Open Sans', sans-serif; font-size: 13px; font-weight: 400; color: #8f96a1; line-height: 18px;">
+															续约折扣
+														</td>
+													</tr>
+
+												</table>
+
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+
+							<tr>
+								<td height="15" style="font-size: 1px; line-height: 15px;">&nbsp;</td>
+							</tr>
+
+							<tr>
+								<td>
+									<table class="table-container" width="200" align="center" border="0" cellpadding="0" cellspacing="0">
+										<tr>
+											<td align="center">
+
+												<table width="18" align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+													<tr>
+														<td align="left">
+															<img src="https://{{host}}/email/img/check-list.png" alt="icon" width="18" height="18">
+														</td>
+													</tr>
+												</table>
+
+												<!-- SPACE -->
+													<table width="1" align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" >
+														<tr>
+															<td width="1" height="5" style="font-size: 5px; line-height: 5px;"></td>
+														</tr>
+													</table>
+												<!-- END SPACE -->
+
+												<table class="table-container" width="170" align="right" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+
+													<tr>
+														<td align="left" style="font-family: 'Open Sans', sans-serif; font-size: 13px; font-weight: 400; color: #8f96a1; line-height: 18px;">
+															线上与电话客服
+														</td>
+													</tr>
+
+												</table>
+
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+
+							<tr>
+								<td height="30" style="font-size: 1px; line-height: 30px;">&nbsp;</td>
+							</tr>
+
+							<tr>
+								<td align="center">
+									<table width="200" align="center" border="0" cellpadding="0" cellspacing="0" bgcolor="#4472cc" style="border-radius: 5px;">
+
+										<tr>
+											<td height="10" style="font-size: 1px; line-height: 10px;">&nbsp;</td>
+										</tr>
+
+										<tr>
+											<td align="center" style="font-family: 'Open Sans', sans-serif; font-size: 13px; font-weight: 600; color: #ffffff; line-height: 24px;">
+												<a href="http://newtongue.ca/checkout/12" style="color: #ffffff; text-decoration: none;">购买</a>
+											</td>
+										</tr>
+
+										<tr>
+											<td height="10" style="font-size: 1px; line-height: 10px;">&nbsp;</td>
+										</tr>
+
+									</table>
+								</td>
+							</tr>
+
+							<tr>
+								<td height="20" style="font-size: 1px; line-height: 20px;">&nbsp;</td>
+							</tr>
+
+						</table>
+
+					</td>
+				</tr>
+
+				<tr>
+					<td height="50" style="font-size: 1px; line-height: 50px;">&nbsp;</td>
+				</tr>
+
+
+				<tr>
+				<td align="center" style="font-family: 'Open Sans', sans-serif; font-size: 13px; font-weight: 400; color: #8f96a1; line-height: 24px;">
+					<a href="http://newtongue.ca/pricingplan">查看更多方案...</a>
+					</td>
+				</tr>
+
+				<tr>
+					<td height="50" style="font-size: 1px; line-height: 50px;">&nbsp;</td>
+				</tr>
+
+			</table>
+		</td>
+	</tr>
+</table>
+<!-- END PRICE 2 COLUMN -->
+
+<!-- SEPERATOR ARTICLE 2 -->
+<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<!-- Background -->
+		<td align="center" bgcolor="#fbfbfc" style="border: 1px solid #f2f2f2;">
+			<table class="table600" width="600" border="0" cellpadding="0" cellspacing="0">
+
+				<tr>
+					<td height="50" style="font-size: 1px; line-height: 50px;">&nbsp;</td>
+				</tr>
+
+				<tr>
+					<td align="center" style="font-family: 'Poppins', sans-serif; font-size: 28px; font-weight: 700; color: #333333; letter-spacing: 2px; line-height: 32px;">
+						我已经有舌尖卡了，要如何开通线上帐号？
+					</td>
+				</tr>
+
+				<!-- Underline -->
+				<tr>
+					<td align="center">
+						<table width="75" border="0" cellpadding="0" cellspacing="0">
+						<!-- Edit Underline -->
+							<tr>
+								<td height="25" style="border-bottom: 2px solid #44cc84;"></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<!-- End Underline -->
+
+				<tr>
+					<td height="25" style="font-size: 1px; line-height: 25px;">&nbsp;</td>
+				</tr>
+
+				<tr>
+					<td align="center" style="font-family: 'Open Sans', sans-serif; font-size: 13px; font-weight: 400; color: #8f96a1; line-height: 24px;">
+						如果您已经购买了舌尖卡，请将实体的舌尖卡拍照，一并将您的名字以及Email寄到 <a href="mailto:sayhello@newtongue.ca">sayhello@newtongue.ca</a> 我们将会帮您开通认证您的帐号，之后即可用线上舌尖卡！
+					</td>
+				</tr>
+
+				<tr>
+					<td height="25" style="font-size: 1px; line-height: 25px;">&nbsp;</td>
+				</tr>
+
+				<tr>
+					<td align="center" style="font-family: 'Open Sans', sans-serif; font-size: 13px; font-weight: 400; color: #8f96a1; line-height: 24px;">
+						<a href="http://newtongue.ca/faq">FAQ</a>
+					</td>
+				</tr>
+
+				<tr>
+					<td height="50" style="font-size: 1px; line-height: 50px;">&nbsp;</td>
+				</tr>
+
+			</table>
+		</td>
+	</tr>
+</table>
+<!-- END SEPERATOR ARTICLE 2 -->
+
+
+
+
+
+<!-- PREFOOTER -->
+<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<!-- Background -->
+		<td align="center" bgcolor="#333333">
+			<table class="table600" width="600" border="0" cellpadding="0" cellspacing="0">
+
+				<tr>
+					<td height="50" style="font-size: 1px; line-height: 50px;">&nbsp;</td>
+				</tr>
+
+				<tr>
+					<td>
+
+						<table class="full-width" width="340" align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+
+							<tr>
+								<td align="left" style="font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: 700; color: #ffffff; line-height: 32px; letter-spacing: 1px;">
+									<img width="80px" height="80px" src="https://{{host}}/email/img/logo.png"></img>
+								</td>
+							</tr>
+
+							<tr>
+								<td align="left" style="font-family: 'Open Sans', sans-serif; font-size: 13px; font-weight: 400; color: #8f96a1; line-height: 24px;">
+									舞动舌尖味蕾智慧享受生活
+								</td>
+							</tr>
+
+							<tr>
+								<td height="20" style="font-size: 1px; line-height: 20px;">&nbsp;</td>
+							</tr>
+
+							<tr>
+								<td>
+
+									<table width="24" align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+										<tr>
+											<td align="left">
+												<img src="https://{{host}}/email/img/prefooter-icon1.png" alt="icon" width="24" height="24">
+											</td>
+										</tr>
+									</table>
+
+									<!-- SPACE -->
+										<table width="1" align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" >
+											<tr>
+												<td width="1" height="10" style="font-size: 10px; line-height: 10px;"></td>
+											</tr>
+										</table>
+									<!-- END SPACE -->
+
+									<table class="table-container" width="300" align="right" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+										<tr>
+											<td align="left" style="font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 400; color: #ffffff; line-height: 24px; letter-spacing: 1px;">
+												E-mail:<a className="links" href="mailto:sayhello@newtongue.ca"> sayhello@newtongue.ca </a>
+											</td>
+										</tr>
+
+									</table>
+
+								</td>
+							</tr>
+
+							<tr>
+								<td height="10" style="font-size: 1px; line-height: 10px;">&nbsp;</td>
+							</tr>
+
+							<tr>
+								<td>
+
+									<table width="24" align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+										<tr>
+											<td align="left">
+												<img src="https://{{host}}/email/img/prefooter-icon2.png" alt="icon" width="24" height="24">
+											</td>
+										</tr>
+									</table>
+
+									<!-- SPACE -->
+										<table width="1" align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" >
+											<tr>
+												<td width="1" height="10" style="font-size: 10px; line-height: 10px;"></td>
+											</tr>
+										</table>
+									<!-- END SPACE -->
+
+									<table class="table-container" width="300" align="right" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+										<tr>
+											<td align="left" style="font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 400; color: #ffffff; line-height: 24px; letter-spacing: 1px;">
+												Richmond, BC, Canada
+											</td>
+										</tr>
+
+									</table>
+
+								</td>
+							</tr>
+
+							<tr>
+								<td height="10" style="font-size: 1px; line-height: 10px;">&nbsp;</td>
+							</tr>
+
+							<tr>
+								<td>
+
+									<table width="24" align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+										<tr>
+											<td align="left">
+												<img src="https://{{host}}/email/img/prefooter-icon3.png" alt="icon" width="24" height="24">
+											</td>
+										</tr>
+									</table>
+
+									<!-- SPACE -->
+										<table width="1" align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" >
+											<tr>
+												<td width="1" height="10" style="font-size: 10px; line-height: 10px;"></td>
+											</tr>
+										</table>
+									<!-- END SPACE -->
+
+									<table class="table-container" width="300" align="right" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+										<tr>
+											<td align="left" style="font-family: 'Open Sans', sans-serif; font-size: 13px; font-weight: 600; color: #ffffff; line-height: 24px; letter-spacing: 1px;">
+												Wesbite: <a href="http://newtongue.ca">newtongue.ca</a>
+											</td>
+										</tr>
+
+									</table>
+
+								</td>
+							</tr>
+
+						</table>
+
+						<!-- SPACE -->
+							<table class="full-width" width="1" align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" >
+								<tr>
+									<td width="1" height="40" style="font-size: 40px; line-height: 40px;"></td>
+								</tr>
+							</table>
+						<!-- END SPACE -->
+
+						<table class="full-width" width="190" align="right" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+
+
+
+							<tr>
+								<td height="20" style="font-size: 1px; line-height: 20px;">&nbsp;</td>
+							</tr>
+
+							<tr>
+								<td align="left" style="font-family: 'Poppins', sans-serif; font-size: 20px; font-weight: 700; color: #ffffff; line-height: 28px;">
+									网站连结
+								</td>
+							</tr>
+
+							<tr>
+								<td height="20" style="font-size: 1px; line-height: 20px;">&nbsp;</td>
+							</tr>
+
+							<tr>
+								<td align="left" style="font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 700; color: #8f96a1; line-height: 40px;">
+									<a href="http://newtongue.ca/">首页</a>
+								</td>
+							</tr>
+
+
+							<tr>
+								<td align="left" style="font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 700; color: #8f96a1; line-height: 40px;">
+									<a href="http://newtongue.ca/pricingplan">购买舌尖卡</a>
+								</td>
+							</tr>
+							<tr>
+								<td align="left" style="font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 700; color: #8f96a1; line-height: 40px;">
+									<a href="http://newtongue.ca/storelist">商家</a>
+								</td>
+							</tr>
+							<tr>
+								<td align="left" style="font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 700; color: #8f96a1; line-height: 40px;">
+									<a href="http://newtongue.ca/faq">FAQ</a>
+								</td>
+							</tr>
+
+							<tr>
+								<td height="15" style="font-size: 1px; line-height: 15px;">&nbsp;</td>
+							</tr>
+
+
+						</table>
+
+					</td>
+				</tr>
+
+				<tr>
+					<td height="20" style="font-size: 1px; line-height: 20px;">&nbsp;</td>
+				</tr>
+
+			</table>
+		</td>
+	</tr>
+</table>
+<!-- END PREFOOTER -->
+
+<!-- FOOTER -->
+<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<!-- Background -->
+		<td align="center" bgcolor="#2a2a2a">
+			<table class="table600" width="600" border="0" cellpadding="0" cellspacing="0">
+
+				<tr>
+					<td height="15" style="font-size: 1px; line-height: 15px;">&nbsp;</td>
+				</tr>
+
+				<tr>
+					<td>
+
+						<table class="full-width" width="494" align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+
+							<tr>
+								<td align="left" style="font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 400; color: #ffffff; line-height: 18px;">
+									Copyrights © 2015 All Rights Reserved by New Tongue Inc.
+								</td>
+							</tr>
+
+						</table>
+
+						<!-- SPACE -->
+							<table class="full-width" width="1" align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" >
+								<tr>
+									<td width="1" height="5" style="font-size: 5px; line-height: 5px;"></td>
+								</tr>
+							</table>
+						<!-- END SPACE -->
+
+					</td>
+				</tr>
+
+				<tr>
+					<td height="15" style="font-size: 1px; line-height: 15px;">&nbsp;</td>
+				</tr>
+
+			</table>
+		</td>
+	</tr>
+</table>
+<!-- END FOOTER -->
+
+</body>
+</html>
