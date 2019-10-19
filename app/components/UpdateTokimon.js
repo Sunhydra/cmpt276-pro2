@@ -50,7 +50,20 @@ class UpdateTokimon extends React.Component {
     }
 
     handleChange(event) {
-        this.setState({ [event.target.name]: event.target.value });
+      if(event.target.name !== "name" && event.target.name !== "trainer"){
+        if(!isNaN(event.target.value)){
+              this.setState({ [event.target.name]: event.target.value });
+        }
+        if(isNaN(this.state.total)){
+          this.setState({'total': event.target.value  });
+        }
+        else{
+          this.setState({'total': Number(this.state.total)+Number(event.target.value)  });
+        }
+      }
+      else{
+            this.setState({ [event.target.name]: event.target.value });
+      }
     }
     handleUpdateTokimon(event) {
         event.preventDefault();

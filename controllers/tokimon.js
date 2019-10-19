@@ -51,7 +51,12 @@ exports.tokimonNewOne = function(req,res,next){
       Tokimon.findOne({  })
   .sort('-Id')  // give me the max
   .exec(function(err, result){
+      if(result){
         callback(err, Number(result.Id)+1);
+      }
+      else{
+        callback(1);
+      }
       });
     },
     function(id){
